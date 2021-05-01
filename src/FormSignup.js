@@ -3,25 +3,26 @@ import useForm from './useForm'
 import validate from './validateInfo'
 import './Form.css'
 
-
-const FormSignup = ({submitForm}) => {
-    const { handleChange, values, handleSubmit, errors } 
-    = useForm(
+const FormSignup = ({ submitForm }) => {
+    const {
+        handleChange,
+        values,
+        handleSubmit,
+        errors
+    } = useForm(
         submitForm, 
         validate
     );
-
 
     return (
         <div className="form-content-right">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>Get started with us today! Create your account by fillin out the information below.</h1>
                 <div className="forms-inputs">
-                    <label htmlFor="username" 
-                    className="form-label">
+                    <label htmlFor="username" className="form-label">
                         Username
                     </label>
-                    <input 
+                    <input
                         id="username"
                         type="text"
                         name="username"
@@ -29,8 +30,9 @@ const FormSignup = ({submitForm}) => {
                         placeholder="Enter your usermame"
                         value={values.username}
                         onChange={handleChange}
-                        />
-                        {errors.username && <p>{errors.username}</p>}
+                    />
+                    {errors.username && <p>{errors.username}</p>}
+                    {true && true}
                 </div>
                 <div className="forms-inputs">
                     <label htmlFor="email" 
@@ -77,17 +79,20 @@ const FormSignup = ({submitForm}) => {
                         placeholder="Enter your password"
                         value={values.password2}
                         onChange={handleChange}
-                        />
-                        {errors.password2 && <p>{errors.password2}</p>}
+                    />
+                    {errors.password2 && <p>{errors.password2}</p>}
                 </div>
                 <button className="form-input-btn"
                 type="submit">
                     Sign up
                 </button>
-                <span className="form-input-login">
-                    Already have an account? Login <a 
-                    href="#">here</a>
-                </span>
+                {
+                    true &&
+                    <span className="form-input-login">
+                        Already have an account? Login <a 
+                        href="#">here</a>
+                    </span>
+                }
             </form>
         </div>
     );
