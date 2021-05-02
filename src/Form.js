@@ -13,9 +13,7 @@ const Form = () => {
     return (
         <>
             <div className='form-container'>
-                <div className='form-content-left'>
-                    
-                </div>
+                <div className='form-content-left' />
                 {
                     !isSubmitted ? (
                         <FormSignup submitForm={submitForm} />

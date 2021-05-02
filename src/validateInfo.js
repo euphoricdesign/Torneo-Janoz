@@ -1,23 +1,24 @@
 export default function validateInfo(values) {
     let errors = {}
 
-    if(!values.username.trim()) {
-        errors.username = "Campo requerido"
+    if(!values.name.trim()) {
+        errors.name = "Campo requerido"
     }
 
-    //Email
+    if (!values.id) {
+        errors.id = 'Campo requerido';
+    } else if(typeof values.id === 'number') {
+        errors.id = 'formato de cedula de identidad invalido';
+    }
+
     if (!values.email) {
         errors.email = 'Campo requerido';
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-        errors.email = 'Campo requerido';
+        errors.email = 'formato de email invalido';
     }
 
-    if (!values.password) {
-        errors.password = 'Campo requerido';
-    } 
-
-    if(!values.password2) {
-        errors.password2 = "Campo requerido";
+    if(!values.ticket) {
+        errors.ticket = "Campo requerido";
     } 
 
     return errors;

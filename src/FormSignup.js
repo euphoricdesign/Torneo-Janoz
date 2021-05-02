@@ -19,73 +19,76 @@ const FormSignup = ({ submitForm }) => {
             <form className="form" onSubmit={handleSubmit}>
                 <h1 className="font-weight-bold">INGRESA TUS DATOS PARA PARTICIPAR</h1>
                 <div className="hr" />
+
                 <div className="forms-inputs">
-                    <label htmlFor="username" className="form-label">
-                            Nombre completo
-                            <span className="text-danger"> *</span>
+                    <label htmlFor="name" className="form-label">
+                        Nombre completo
+                        <span className="text-danger"> *</span>
                     </label>
                     <input
-                        id="username"
+                        id="name"
                         type="text"
-                        name="username"
+                        name="name"
                         className="form-input" 
                         placeholder="Tu nombre"
-                        value={values.username}
+                        value={values.name}
                         onChange={handleChange}
                     />
-                    {errors.username && <p>{errors.username}</p>}
+                    {errors.name && <p>{errors.name}</p>}
                     {true && true}
                 </div>
+                
                 <div className="forms-inputs">
-                    <label htmlFor="email" 
+                    <label htmlFor="id" 
                     className="form-label">
                         Cedula de identidad
                         <span className="text-danger"> *</span>
                     </label>
                     <input 
-                        id="email"
-                        type="text"
-                        name="email"
+                        id="id"
+                        type="number"
+                        name="id"
                         className="form-input" 
                         placeholder="Tu cedula de identidad"
-                        value={values.email}
+                        value={values.id}
                         onChange={handleChange}
                         />
-                        {errors.email && <p>{errors.email}</p>}
+                        {errors.id && <p>{errors.id}</p>}
                 </div>
+                
                 <div className="forms-inputs">
-                    <label htmlFor="password" 
-                    className="form-label">
+                    <label htmlFor="email" className="form-label">
                         Dirección de e-mail
                         <span className="text-danger"> *</span>
                     </label>
                     <input 
-                        id="password"
+                        id="email"
                         type="email"
-                        name="password"
+                        name="email"
                         className="form-input" 
                         placeholder="Tu e-mail"
-                        value={values.password}
+                        value={values.email}
                         onChange={handleChange}
-                        />
-                        {errors.password && <p>{errors.password}</p>}
+                    />
+                    {errors.email && <p>{errors.email}</p>}
                 </div>
+                
                 <div className="forms-inputs">
-                    <label htmlFor="password2" 
+                    <label htmlFor="ticket" 
                     className="form-label">
                         Número de ticket
                         <span className="text-danger"> *</span>
                     </label>
                     <input 
-                        id="password2"
+                        id="ticket"
                         type="text"
-                        name="password2"
+                        name="ticket"
                         className="form-input" 
                         placeholder="Tu número de ticket"
-                        value={values.password2}
+                        value={values.ticket}
                         onChange={handleChange}
                     />
-                    {errors.password2 && <p>{errors.password2}</p>}
+                    {errors.ticket && <p>{errors.ticket}</p>}
                 </div>
                 <button class="btn btn-danger btn-aceptar" type="submit">Aceptar</button>
             </form>
