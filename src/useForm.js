@@ -1,16 +1,16 @@
 import {useState, useEffect} from 'react';
+import firebaseApp from './firebase'
 
-const useForm = (callback, validate) => {
+const useForm = (miFuncion, validate) => {
     const [values, setValues] = useState({
-        username: '',
+        name: '',
+        id: '',
         email: '',
-        password: '',
-        password2: ''
+        ticket: ''
     });
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState
     (false);
-
 
     const handleChange = e => {
         const { name, value} = e.target;
@@ -27,14 +27,16 @@ const useForm = (callback, validate) => {
         setIsSubmitting(true);
     };
 
+    const sendInfoToFirebase = () => firebaseApp.database().ref().child("/registered-users").push(
+        values
+    ).key
+
     useEffect(() => {
-        if (Object.keys(errors).length === 0 &&
-        isSubmitting) {
-            callback();
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            sendInfoToFirebase();
+            miFuncion();
         }
-    }, 
-    [errors]
-    );
+    }, [errors]);
 
     return { handleChange, values, handleSubmit, errors };
 };

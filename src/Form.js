@@ -7,15 +7,14 @@ const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     function submitForm() {
+
         setIsSubmitted(true);
     }
 
     return (
         <>
             <div className='form-container'>
-                <div className='form-content-left'>
-                    
-                </div>
+                <div className='form-content-left' />
                 {
                     !isSubmitted ? (
                         <FormSignup submitForm={submitForm} />
