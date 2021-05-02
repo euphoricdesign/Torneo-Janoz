@@ -2,27 +2,23 @@ export default function validateInfo(values) {
     let errors = {}
 
     if(!values.username.trim()) {
-        errors.username = "Username required"
+        errors.username = "Campo requerido"
     }
 
     //Email
     if (!values.email) {
-        errors.email = 'Email required';
+        errors.email = 'Campo requerido';
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-        errors.email = 'Email address is invalid';
+        errors.email = 'Campo requerido';
     }
 
     if (!values.password) {
-        errors.password = 'Password is required';
-    } else if (values.password.length < 6) {
-        errors.password = 'Password needs to be 6 characters or more';
-    }
+        errors.password = 'Campo requerido';
+    } 
 
     if(!values.password2) {
-        errors.password2 = "Password is required";
-    } else if (values.password2 !== values.password) {
-        errors.password2 = "Password do not match";
-    }
+        errors.password2 = "Campo requerido";
+    } 
 
     return errors;
 }

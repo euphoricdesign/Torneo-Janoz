@@ -17,17 +17,19 @@ const FormSignup = ({ submitForm }) => {
     return (
         <div className="form-content-right">
             <form className="form" onSubmit={handleSubmit}>
-                <h1>Get started with us today! Create your account by fillin out the information below.</h1>
+                <h1 className="font-weight-bold">INGRESA TUS DATOS PARA PARTICIPAR</h1>
+                <div className="hr" />
                 <div className="forms-inputs">
                     <label htmlFor="username" className="form-label">
-                        Username
+                            Nombre completo
+                            <span className="text-danger"> *</span>
                     </label>
                     <input
                         id="username"
                         type="text"
                         name="username"
                         className="form-input" 
-                        placeholder="Enter your usermame"
+                        placeholder="Tu nombre"
                         value={values.username}
                         onChange={handleChange}
                     />
@@ -37,14 +39,15 @@ const FormSignup = ({ submitForm }) => {
                 <div className="forms-inputs">
                     <label htmlFor="email" 
                     className="form-label">
-                        Email
+                        Cedula de identidad
+                        <span className="text-danger"> *</span>
                     </label>
                     <input 
                         id="email"
-                        type="email"
+                        type="text"
                         name="email"
                         className="form-input" 
-                        placeholder="Enter your email"
+                        placeholder="Tu cedula de identidad"
                         value={values.email}
                         onChange={handleChange}
                         />
@@ -53,14 +56,15 @@ const FormSignup = ({ submitForm }) => {
                 <div className="forms-inputs">
                     <label htmlFor="password" 
                     className="form-label">
-                        Password
+                        Dirección de e-mail
+                        <span className="text-danger"> *</span>
                     </label>
                     <input 
                         id="password"
-                        type="password"
+                        type="email"
                         name="password"
                         className="form-input" 
-                        placeholder="Enter your password"
+                        placeholder="Tu e-mail"
                         value={values.password}
                         onChange={handleChange}
                         />
@@ -69,30 +73,21 @@ const FormSignup = ({ submitForm }) => {
                 <div className="forms-inputs">
                     <label htmlFor="password2" 
                     className="form-label">
-                        Confirm Password
+                        Número de ticket
+                        <span className="text-danger"> *</span>
                     </label>
                     <input 
                         id="password2"
-                        type="password"
+                        type="text"
                         name="password2"
                         className="form-input" 
-                        placeholder="Enter your password"
+                        placeholder="Tu número de ticket"
                         value={values.password2}
                         onChange={handleChange}
                     />
                     {errors.password2 && <p>{errors.password2}</p>}
                 </div>
-                <button className="form-input-btn"
-                type="submit">
-                    Sign up
-                </button>
-                {
-                    true &&
-                    <span className="form-input-login">
-                        Already have an account? Login <a 
-                        href="#">here</a>
-                    </span>
-                }
+                <button class="btn btn-danger btn-aceptar" type="submit">Aceptar</button>
             </form>
         </div>
     );

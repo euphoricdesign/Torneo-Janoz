@@ -1,12 +1,7 @@
-
-
 .form-container {
-    margin: 100px auto;
-    width: 1000px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    width: 100vw;
     position: relative;
-    border-radius: 10px;
-    height: 600px;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -22,14 +17,10 @@
 }
 
 .form-content-left {
-    background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
-    );
-    border-radius: 10px 0 0 10px;
-    position: relative;
-}
+    background-image: url(./img/img1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+} 
 
 .form-img {
     width: 80%;
@@ -57,7 +48,6 @@
 }
 
 .form-content-right {
-    border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
 }
@@ -76,29 +66,33 @@
 }
 
 .form h1 {
-    font-size: 1rem;
-    text-align: start;
+    font-size: 30px;
+    text-align: center;
     width: 80%;
     margin-bottom: 1rem;
     color: #fff;
+    font-weight: bolder;
 }
 
 .form-inputs {
     margin-bottom: 0.5rem;
-    width: 80%;
+    width: 100%;
 }
 
+
 .forms-inputs p {
-    font-size: 0.8rem;
+    font-size: 12px;
     margin-top: 0.5rem;
     color: #f00e0e;
 }
 
 .form-label {
-    display: inline-block;
-    font-size: 0.8rem;
-    margin-bottom: 6px;
     color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
 }
 
 .form-input {
@@ -107,39 +101,14 @@
     outline: none;
     border-radius: 2px;
     height: 40px;
-    width: 360px;
+    width: 100%;
     border: none;
+    margin-bottom: 20px;
 }
 
 .form-input::placeholder {
     color: #595959;
     font-size: 12px;
-}
-
-.form-input-btn {
-    width: 80%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 2px;
-    background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
-    );
-    outline: none;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.form-input-btn:hover {
-    cursor: pointer;
-    background: linear-gradient(
-    90deg,
-    rgb(39, 143, 255) 0%,
-    rgb(12, 99, 250) 100%
-    );
-    transition: all 0.4s ease-out;
 }
 
 .form-input-login {
@@ -154,4 +123,11 @@
     text-decoration: none;
     color: #27cdff;
     font-weight: 600;
+}
+
+.hr {
+    background: white;
+    width: 550px;
+    height: 1px;
+    margin: 20px 0px;
 }
