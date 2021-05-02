@@ -131,3 +131,11 @@
     height: 1px;
     margin: 20px 0px;
 }
+
+#aceptar {
+    padding: 7px 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+}

@@ -9,10 +9,7 @@ const FormSignup = ({ submitForm }) => {
         values,
         handleSubmit,
         errors
-    } = useForm(
-        submitForm, 
-        validate
-    );
+    } = useForm(submitForm, validate);
 
     return (
         <div className="form-content-right">
@@ -90,7 +87,7 @@ const FormSignup = ({ submitForm }) => {
                     />
                     {errors.ticket && <p>{errors.ticket}</p>}
                 </div>
-                <button class="btn btn-danger btn-aceptar" type="submit">Aceptar</button>
+                <button className="btn btn-danger" id="aceptar" type="submit">Aceptar</button>
             </form>
         </div>
     );

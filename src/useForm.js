@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
+import firebaseApp from './firebase'
 
-const useForm = (callback, validate) => {
+const useForm = (miFuncion, validate) => {
     const [values, setValues] = useState({
         name: '',
         id: '',
@@ -26,10 +27,14 @@ const useForm = (callback, validate) => {
         setIsSubmitting(true);
     };
 
+    const sendInfoToFirebase = () => firebaseApp.database().ref().child("/registered-users").push(
+        values
+    ).key
+
     useEffect(() => {
-        if (Object.keys(errors).length === 0 &&
-        isSubmitting) {
-            callback();
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            sendInfoToFirebase();
+            miFuncion();
         }
     }, [errors]);
 
