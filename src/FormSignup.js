@@ -89,6 +89,20 @@ const FormSignup = ({ submitForm }) => {
                 </div>
                 <button className="btn btn-danger" id="aceptar" type="submit">Aceptar</button>
             </form>
+            
+            {/* <footer>
+                <div className="logo-wrapper">
+                    <img src="./img/"></img>
+                </div>
+                <div clasName="footer-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam numquam
+                        est dolores recusandae magni, aliquid eveniet nam culpa, perspiciatis veniam necessitatibus,
+                        porro quam mollitia eaque enim minus nesciunt nisi.
+                    </p>
+                </div>
+            </footer>  */}
+
         </div>
     );
 };
