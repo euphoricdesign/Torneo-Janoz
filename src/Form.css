@@ -8,12 +8,11 @@ p {
 }
 
 .form-container {
-    width: 100vw;
-    position: relative;
-    height: 100vh;
     display: grid;
+    width: 100%;
+    height: 100vh;
+    position: relative;
     grid-template-columns: 1fr 1.4fr;
-    ;
 }
 
 .close-btn {
@@ -30,6 +29,7 @@ p {
     background-image: url(./img/img.png);
     background-size: cover;
     background-repeat:no-repeat ;
+    background-position-x: center;
 } 
 
 .form-img {
@@ -82,12 +82,21 @@ p {
     width: 80%;
     color: #fff;
     font-weight: bolder;
-    margin: 0;
+    margin: 20px;
 }
 
 .forms-inputs {
     margin-bottom: 0.5rem;
     width: 73%;
+}
+
+#inputs-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
 }
 
 
@@ -124,6 +133,11 @@ p {
     font-size: 16px;
 }
 
+.first-input {
+    margin-top: 15px;
+}
+
+
 .form-input-login {
     font-size: 0.8rem;
     margin-top: 10px;
@@ -140,9 +154,8 @@ p {
 
 .hr {
     background: white;
-    width: 600px;
+    width: 77%;
     height: 1px;
-    margin: 25px 0px 40px 0px;
 }
 
 .hr-success {
@@ -175,25 +188,79 @@ p {
     border-radius: 20px;
 }
 
-footer {
-    background-color: #1f232b;
-    width: 100%;
-}
-
-footer .logo-wrapper {
+.main-footer {
+    background: #1f232b;
+    height: 20vh;
     display: flex;
     justify-content: center;
-    
-
+    align-items: center;
+    flex-direction: column;
 }
 
-footer p {
-    font-size: 11px;
+.main-footer p{
     text-align: center;
-    padding: 20px;
+    font-size: 13px;
 }
 
-.logo-wrapper img {
-    width: 50px;
-    margin: 40px 30px;
+@media screen and (max-width: 800px) {
+    .form-container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+
+    .form-content-left {
+        background-image: url(./img/Banner_Janoz_3_1.png);
+        height: 40vh;
+        background-size: cover;
+        background-repeat:no-repeat ;
+    }
+
+    .form-content-right {
+        position: relative;
+        background: #15181f;
+        padding-top: 275px;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width:600px) {
+.form-content-left {
+    height: 36vh;
+}
+}
+
+@media screen and (max-width: 600px) and (min-width:400px) {
+    .form-content-left {
+        height: 30vh;
+    }
+}
+
+
+
+@media screen and (max-width:400px) and (min-width: 320px) {
+    .form-input {
+        height: 40px;
+    }
+
+    #aceptar {
+        margin-top: 0;
+    }
+
+    .form-content-left {
+        height: 22vh;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width: 320px) {
+    .form h1 {
+        margin: 20px 0px 25px 0px;
+        font-size: 23px;
+    }
+
+    .hr {
+        display: none;
+    }
 }

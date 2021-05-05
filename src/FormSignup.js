@@ -17,13 +17,14 @@ const FormSignup = ({ submitForm }) => {
                 <h1 className="font-weight-bold">INGRESA TUS DATOS PARA PARTICIPAR</h1>
                 <div className="hr" />
 
+                <div id="inputs-wrapper">
                 <div className="forms-inputs">
                     <label htmlFor="name" className="form-label">
                         Nombre completo
                         <span className="text-danger"> *</span>
                     </label>
                     <input
-                        id="name"
+                        id="name first-input"
                         type="text"
                         name="name"
                         className="form-input" 
@@ -88,22 +89,11 @@ const FormSignup = ({ submitForm }) => {
                     {errors.ticket && <p>{errors.ticket}</p>}
                 </div>
                 <button className="btn btn-danger" id="aceptar" type="submit">Aceptar</button>
+                </div>
             </form>
-            
-            {/* <footer>
-                <div className="logo-wrapper">
-                    <img src="./img/"></img>
-                </div>
-                <div clasName="footer-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam numquam
-                        est dolores recusandae magni, aliquid eveniet nam culpa, perspiciatis veniam necessitatibus,
-                        porro quam mollitia eaque enim minus nesciunt nisi.
-                    </p>
-                </div>
-            </footer>  */}
-
         </div>
+
+        
     );
 };
 
