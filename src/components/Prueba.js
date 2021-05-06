@@ -2,6 +2,7 @@ import React from 'react';
 import useForm from '../useForm'
 import validate from '../validateInfo'
 import './Prueba.css';
+import logo from '../img/logo.png'
 
 const Prueba = ({ submitForm }) => {
     const {
@@ -88,12 +89,13 @@ const Prueba = ({ submitForm }) => {
                             <button className="btn btn-danger mt" id="aceptar" type="submit">Aceptar</button>
                         </div>
                     </form>
+                    <a href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing" target="_blank" style={{color:'white', fontSize: 12, marginTop: 10}} >Información del torneo</a>
                 </div>
             </div>
             <div className="footer">
-                <img src="../img/logo.png"/>
+                <img src={logo} />
                 <p className="p-footer">Ni Electronic Arts Inc. ni sus licenciantes están afiliados a este torneo y tampoco lo patrocinan.</p>
-                <p className="p-footer">El torneo se jugará en PlayStation 4 y con el título FIFA21.</p>
+                <p className="p-footer p-mobile">El torneo se jugará en PlayStation 4 y con el título FIFA21.</p>
             </div>
         </div>
     )
