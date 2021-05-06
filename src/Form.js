@@ -5,10 +5,14 @@ import './Form.css';
 
 const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [uniqueCodeToShow, setUniqueCodeToShow] = useState('')
 
     function submitForm() {
-
         setIsSubmitted(true);
+    }
+
+    const updateCode = (code) => {
+        setUniqueCodeToShow(code)
     }
 
     return (
@@ -17,9 +21,9 @@ const Form = () => {
                 <div className='form-content-left' />
                 {
                     !isSubmitted ? (
-                        <FormSignup submitForm={submitForm} />
+                        <FormSignup submitForm={submitForm} updateCode={updateCode} />
                     ) : (
-                        <FormSuccess />
+                        <FormSuccess uniqueCodeToShow={uniqueCodeToShow} />
                     )
                 }
             </div>

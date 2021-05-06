@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import useForm from './useForm'
 import validate from './validateInfo'
 import './Form.css'
 
-const FormSignup = ({ submitForm }) => {
+const FormSignup = ({ submitForm, updateCode }) => {
     const {
         handleChange,
         values,
         handleSubmit,
         errors
-    } = useForm(submitForm, validate);
+    } = useForm(submitForm, validate, updateCode);
+
+    useEffect(() => {
+        updateCode(values.uniqueCode)
+    }, [values.uniqueCode])
 
     return (
         <div className="form-content-right">
