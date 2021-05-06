@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Futura;
+    src: url(FuturaPTLight.otf);
+}
+
+@font-face {
+    font-family: Futura-bold;
+    src: url(FuturaPTBold.otf);
+}
+
+@font-face {
+    font-family: Futura-medium;
+    src: url(FuturaPTMedium.otf);
+}
+
+@font-face {
+    font-family: Futura-demi;
+    src: url(FuturaPTDemi.otf);
+}
+
+.main {
+    display: flex;
+}
+
+.inputs-wrapper {
+    width: 50vw;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.inputs-wrapper p {
+    font-size: 12px;
+    margin:0;
+    color: #f00e0e;
+}
+
+.izq {
+    background-image: url(../img/img.png);
+    background-size: cover;
+    height: 100vh;
+    width: 30vw;
+    background-position-y: center;
+}
+
+.der {
+    background-color: #15181f;;
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 112px;
+}
+
+.der h1 {
+    font-size: 35px;
+    color: #f33d37;
+    font-weight: bold;
+    text-align: center;
+    font-family: Futura-bold;
+}
+
+.der .p1-form {
+    font-size: 18px;
+    font-family: Futura-demi;
+}
+
+.der .p2-form {
+    font-size: 15px;
+    font-family: Futura-medium;
+    margin: 30px 0;
+}
+
+.form-label {
+    font-family: Futura-medium;
+}
+
+.form-input::placeholder {
+    font-family: Futura;
+}
+
+#aceptar {
+    font-family: Futura-medium;
+    letter-spacing: 1px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #1f232b;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .p-footer {
+    font-family: Futura;
+}
+
+
+hr {
+    width: 55vw;
+}
+
+@media screen and (max-width:1440px) {
+    .form-input {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1440px) and (min-width:1300px){
+    .der h1 {
+        font-size: 30px;
+    }
+
+    .der .p1-form {
+        font-size: 17px;
+    }
+
+    .der .p2-form {
+        font-size: 15px;
+        margin: 10px 0px 30px 0px;
+    }
+
+    .form-input {
+        height: 40px;
+    }
+
+    #aceptar {
+        font-size: 14px;
+        padding: 5px 30px;
+    }
+
+    hr {
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+@media screen and (max-width:1300px) and (min-width:1100px) {
+    .izq {
+        background-position-x: center;
+    }
+}
+
+@media screen and (max-width:1300px) and (min-width:1024px) {
+    .der h1 {
+        font-size: 27px;
+    }
+
+    .der .p1-form {
+        font-size: 16px;
+    }
+
+    .der .p2-form {
+        font-size: 15px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .form-input {
+        height: 40px;
+    }
+
+    #aceptar {
+        font-size: 14px;
+        padding: 7px 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1100px) and (min-width:1024px) {
+    .izq {
+        width: 40vw;
+        background-position-y: center;
+        background-position-x: center;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:800px) {
+    .izq {
+        width: 47vw;
+        background-position-x: center;
+    }
+
+    .der h1 {
+        font-size: 24px;
+    }
+
+    .der .p1-form {
+        font-size: 15px;
+    }
+
+    .der .p2-form {
+        font-size: 14px;
+    }
+
+    .form-input {
+        height: 30px;
+    }
+
+    #aceptar {
+        font-size: 14px;
+        padding: 7px 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .inputs-wrapper {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .izq {
+        background-image: url(../img/Banner_Janoz_3_1.png);
+        height: 23vh;
+        width: 100vw;
+    }
+
+    .der {
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .hr-suc {
+        display: none;
+    }
+
+    .der .p1-form {
+        font-size: 15px;
+    }
+
+    .der .p2-form {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .footer .p-footer {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:800px) and (min-width:500px) {
+    .der h1 {
+        font-size: 23px;
+    }
+
+    .izq {
+        height: 35vh;
+    }
+
+    .inputs-wrapper {
+        width: 80vw;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width:500px) {
+    .der h1 {
+        /* font-size: 18px;
+        margin: 20px 0 30px 0; */
+        display: none;
+    }
+
+    .inputs-wrapper {
+        width: 70vw;
+    }
+
+    
+
+    .first-p, 
+    .last-p {
+        font-size: 15px;
+    }
+
+    #aceptar {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}

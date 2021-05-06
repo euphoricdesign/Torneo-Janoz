@@ -121,10 +121,10 @@ p {
     padding-left: 10px;
     outline: none;
     border-radius: 2px;
-    height: 55px;
+    height: 45px;
     width: 100%;
     border: none;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -166,7 +166,16 @@ p {
 }
 
 .first-p {
-    margin-top: 60px;
+    margin-top: 15px;
+    font-family: Futura-demi;
+    font-size: 17px;
+}
+
+.last-p {
+    font-family: Futura-demi;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .codigo {
@@ -182,9 +191,8 @@ p {
 
 #aceptar {
     padding: 7px 40px;
-    margin-top: 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 20px;
 }
 

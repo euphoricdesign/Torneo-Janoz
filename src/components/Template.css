@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+}
+
+.izq {
+    background-color: lightcoral;
+    height: 100vh;
+    width: 50vw;
+}
+
+.der {
+    background-color: lightgreen;
+    height: 100vh;
+    width: 50vw;
+}
+
+.footer {
+    background-color: lightpink;
+    width: 100vw;
+    height: 80px;
+}
+
+@media screen and (max-width:800px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .izq {
+        background-color: lightcoral;
+        height: 20vh;
+        width: 100vw;
+    }
+
+    .der {
+        background-color: lightgreen;
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+}

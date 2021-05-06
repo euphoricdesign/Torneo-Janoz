@@ -37,8 +37,7 @@ const FormSignup = ({ submitForm }) => {
                 </div>
                 
                 <div className="forms-inputs">
-                    <label htmlFor="id" 
-                    className="form-label">
+                    <label htmlFor="id" className="form-label">
                         Cedula de identidad
                         <span className="text-danger"> *</span>
                     </label>
