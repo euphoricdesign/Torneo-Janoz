@@ -8,18 +8,23 @@ import FormSuccess from './FormSuccess'
 
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [uniqueCodeToShow, setUniqueCodeToShow] = useState('')
 
   function submitForm() {
     setIsSubmitted(true)
   }
 
+  const updateCode = (code) => {
+    setUniqueCodeToShow(code)
+}
+
   return (
     <div className="App">
       {
         !isSubmitted ? (
-          <Prueba submitForm={submitForm} />
+          <Prueba submitForm={submitForm} updateCode={updateCode} />
         ) : (
-          <FormSuccess />
+          <FormSuccess uniqueCodeToShow={uniqueCodeToShow} />
         )
       }
     </div>

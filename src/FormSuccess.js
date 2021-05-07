@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './img/logo.png'
 
-const FormSuccess = () => {
+const FormSuccess = ({ uniqueCodeToShow }) => {
     return (
         <div>
             <div className="main">
@@ -11,7 +11,7 @@ const FormSuccess = () => {
                     <h1 className="font-weight-bold">ESTAS CADA VEZ MÁS CERCA DE ENFRENTARTE A LOS MEJORES</h1>
                     <hr className="hr-suc" style={{marginBottom: 50}} />
                     <p className="first-p">El torneo iniciara el día 15 de Junio a las 15hs. Para continuar con tu registro debes ingesar a la página del torneo y colocar tu código único.</p>
-                    <p className="codigo">H7824GJ</p>
+                    <p className="codigo">{uniqueCodeToShow}</p>
                     <div className="centrar">
                         <button className="btn btn-danger" id="aceptar" type="submit"><a href="https://battlefy.com/red-bull-colombia-torneo-1x1-janoz/fifa-20-1x1-janoz-edici%C3%B3n-2021-redbull/609029b42acade3e85b255e3/info?infoTab=details" style={{color: 'white'}} target="_blank">WEB DEL TORNEO</a></button>
                     </div>
