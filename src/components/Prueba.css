@@ -73,7 +73,7 @@
 .der .p2-form {
     font-size: 15px;
     font-family: Futura-medium;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .form-label {
@@ -138,7 +138,7 @@ hr {
 
     .der .p2-form {
         font-size: 15px;
-        margin: 10px 0px 30px 0px;
+        margin: 10px 0px 15px 0px;
     }
 
     .form-input {
@@ -152,6 +152,10 @@ hr {
 
     hr {
         margin: 0px 0px 25px 0px;
+    }
+
+    .mt {
+        margin-top: 4px;
     }
 }
 
@@ -198,7 +202,7 @@ hr {
     }
 }
 
-@media screen and (max-width:1024px) and (min-width:800px) {
+@media screen and (max-width:1300px) and (min-width:801px) {
     .izq {
         width: 47vw;
         background-position-x: center;
@@ -217,12 +221,12 @@ hr {
     }
 
     .form-input {
-        height: 30px;
+        height: 33px;
     }
 
     #aceptar {
         font-size: 14px;
-        padding: 7px 30px;
+        padding: 4px 30px;
     }
 
     hr {
@@ -234,7 +238,7 @@ hr {
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:801px) {
 
     .main {
         flex-direction: column;
@@ -262,11 +266,16 @@ hr {
 
     .der .p2-form {
         font-size: 14px;
-        margin: 20px;
+        margin: 10px 0 15px 0;
     }
 
     hr {
         display: none;
+    }
+
+    #aceptar {
+        font-size: 14px;
+        padding: 5px 30px;
     }
 
     .footer .p-footer {
@@ -311,12 +320,13 @@ hr {
         font-size: 15px;
     }
 
-    #aceptar {
-        font-size: 15px;
-        margin-top: 10px;
-    }
+    
 
     .p-mobile {
         display: none;
+    }
+
+    .form-label {
+        font-size: 15px;
     }
 }
