@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Form from './Form';
-import Footer from '../src/components/Footer';
-import Template from  '../src/components/Template';
+import './Form.css'; 
 import Prueba from '../src/components/Prueba'
 import FormSuccess from './FormSuccess'
 
