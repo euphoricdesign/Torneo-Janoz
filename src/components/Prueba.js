@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import useForm from '../useForm'
 import validate from '../validateInfo'
+import firebaseApp from '../firebase'
 import './Prueba.css';
 import logo from '../img/logo.png'
 
@@ -9,12 +10,17 @@ const Prueba = ({ submitForm, updateCode }) => {
         handleChange,
         values,
         handleSubmit,
-        errors
+        errors,
+        keyToDelete
     } = useForm(submitForm, validate, updateCode);
 
     useEffect(() => {
+        if (keyToDelete !== '') firebaseApp.database().ref(`/unique-codes/${keyToDelete}`).remove()
+    }, [keyToDelete])
+    
+    useEffect(() => {
         updateCode(values.uniqueCode)
-    }, [values.uniqueCode])
+    }, [values.uniqueCode, updateCode])
 
     return (
         <div>
@@ -93,11 +99,18 @@ const Prueba = ({ submitForm, updateCode }) => {
                             <button className="btn btn-danger mt" id="aceptar" type="submit">Aceptar</button>
                         </div>
                     </form>
-                    <a href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing" target="_blank" style={{color:'white', fontSize: 10, marginTop: 9}} >Información del torneo</a>
+                    <a
+                        href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{color:'white', fontSize: 10, marginTop: 9}}
+                    >
+                        Información del torneo
+                    </a>
                 </div>
             </div>
             <div className="footer">
-                <img src={logo} />
+                <img src={logo} alt="tournament-logo" />
                 <p className="p-footer">Ni Electronic Arts Inc. ni sus licenciantes están afiliados a este torneo y tampoco lo patrocinan.</p>
                 <p className="p-footer p-mobile">El torneo se jugará en PlayStation 4 y con el título FIFA21.</p>
             </div>
