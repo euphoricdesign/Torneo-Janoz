@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import './App.css';
 import './Form.css'; 
 import Prueba from '../src/components/Prueba'
@@ -12,9 +12,12 @@ function App() {
     setIsSubmitted(true)
   }
 
-  const updateCode = (code) => {
-    setUniqueCodeToShow(code)
-}
+  const updateCode = useCallback(
+    (code) => {
+      setUniqueCodeToShow(code)
+    },
+    [],
+  )
 
   return (
     <div className="App">
