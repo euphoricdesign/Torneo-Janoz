@@ -99,14 +99,16 @@ const Prueba = ({ submitForm, updateCode }) => {
                             <button className="btn btn-danger mt" id="aceptar" type="submit">Aceptar</button>
                         </div>
                     </form>
-                    <a
-                        href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing"
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{color:'white', fontSize: 10, marginTop: 9}}
-                    >
-                        Información del torneo
-                    </a>
+                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: 18}}>
+                        <a
+                            href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing"
+                            target="_blank"
+                            rel="noreferrer"
+                            style={{color:'white', fontSize: 10, marginTop: 9}}
+                        >
+                            Información del torneo
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="footer">
