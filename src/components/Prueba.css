@@ -297,12 +297,12 @@ hr {
     .inputs-wrapper {
         width: 80vw;
     }
+
 }
 
 @media screen and (max-width:500px) {
     .der {
-        padding: 60px 30px;
-        justify-content: flex-start;
+        padding: 0 30px;
     }
 
     .der h1 {
