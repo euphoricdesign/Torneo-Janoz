@@ -301,7 +301,7 @@ hr {
 
 @media screen and (max-width:500px) {
     .der {
-        padding: 30px 30px;
+        padding: 60px 30px;
         justify-content: flex-start;
     }
 
