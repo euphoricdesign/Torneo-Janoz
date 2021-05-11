@@ -297,13 +297,13 @@ hr {
     .inputs-wrapper {
         width: 80vw;
     }
-
-    
-
-    
 }
 
 @media screen and (max-width:500px) {
+    .der {
+        padding: 0 30px;
+    }
+
     .der h1 {
         /* font-size: 18px;
         margin: 20px 0 30px 0; */
