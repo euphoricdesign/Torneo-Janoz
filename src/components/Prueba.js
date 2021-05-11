@@ -55,7 +55,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                                 <span className="text-danger"> *</span>
                             </label>
                             <input
-                                id="name first-input"
+                                id="id first-input"
                                 type="text"
                                 name="id"
                                 className="form-input" 
@@ -70,7 +70,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                                 <span className="text-danger"> *</span>
                             </label>
                             <input
-                                id="name first-input"
+                                id="email first-input"
                                 type="text"
                                 name="email"
                                 className="form-input" 
@@ -85,7 +85,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                                 <span className="text-danger"> *</span>
                             </label>
                             <input
-                                id="name first-input"
+                                id="ticket first-input"
                                 type="text"
                                 name="ticket"
                                 className="form-input" 
