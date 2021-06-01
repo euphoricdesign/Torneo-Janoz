@@ -1,336 +1,319 @@
 @font-face {
-    font-family: Futura;
-    src: url(FuturaPTLight.otf);
+  font-family: Futura;
+  src: url(FuturaPTLight.otf);
 }
 
 @font-face {
-    font-family: Futura-bold;
-    src: url(FuturaPTBold.otf);
+  font-family: Futura-bold;
+  src: url(FuturaPTBold.otf);
 }
 
 @font-face {
-    font-family: Futura-medium;
-    src: url(FuturaPTMedium.otf);
+  font-family: Futura-medium;
+  src: url(FuturaPTMedium.otf);
 }
 
 @font-face {
-    font-family: Futura-demi;
-    src: url(FuturaPTDemi.otf);
+  font-family: Futura-demi;
+  src: url(FuturaPTDemi.otf);
 }
 
 .main {
-    display: flex;
-}
-
-.inputs-wrapper {
-    width: 50vw;
+  display: flex;
 }
 
 .form-input {
-    width: 100%;
+  width: 100%;
 }
 
 .inputs-wrapper p {
-    font-size: 12px;
-    margin:0;
-    color: #f00e0e;
+  font-size: 12px;
+  margin: 0;
+  color: #f00e0e;
 }
 
 .izq {
-    background-image: url(../img/img.png);
-    background-size: cover;
-    height: 100vh;
-    width: 30vw;
-    background-position-y: center;
+  background-image: url(../img/img.png);
+  background-size: cover;
+  height: 100vh;
+  width: 30vw;
+  background-position-y: top;
+  background-repeat: no-repeat;
 }
 
-
-
 .der {
-    background-color: #15181f;;
-    height: 100vh;
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 112px;
+  background-color: #15181f;
+  height: 100vh;
+  width: 70vw;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 112px;
+  overflow-y: scroll;
 }
 
 .der h1 {
-    font-size: 35px;
-    color: #f33d37;
-    font-weight: bold;
-    text-align: center;
-    font-family: Futura-bold;
+  font-size: 35px;
+  color: #f33d37;
+  font-weight: bold;
+  text-align: center;
+  font-family: Futura-bold;
 }
 
 .der .p1-form {
-    font-size: 18px;
-    font-family: Futura-demi;
+  font-size: 18px;
+  font-family: Futura-demi;
 }
 
 .der .p2-form {
-    font-size: 15px;
-    font-family: Futura-medium;
-    margin: 10px 0;
+  font-size: 15px;
+  font-family: Futura-medium;
+  margin: 10px 0;
 }
 
 .form-label {
-    font-family: Futura-medium;
+  font-family: Futura-medium;
 }
 
 .form-input::placeholder {
-    font-family: Futura;
+  font-family: Futura;
 }
 
 #aceptar {
-    font-family: Futura-medium;
-    letter-spacing: 1px;
+  font-family: Futura-medium;
+  letter-spacing: 1px;
 }
 
 .centrar {
-    text-align: center;
+  text-align: center;
 }
 
 .mt {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .footer {
-    background-color: #1f232b;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #1f232b;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .p-footer {
-    font-family: Futura;
-    margin: 0;
+  font-family: Futura;
+  margin: 0;
 }
 
 .footer img {
-    width: 30px;
-    margin-bottom: 10px;
+  width: 30px;
+  margin-bottom: 10px;
 }
-
 
 hr {
-    width: 50vw;
+  width: 50vw;
 }
 
-@media screen and (max-width:1440px) {
-    .form-input {
-        margin-bottom: 10px;
-    }
+@media screen and (max-width: 1440px) {
+  .form-input {
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (max-width:1440px) and (min-width:1300px){
-    .der h1 {
-        font-size: 30px;
-    }
+@media screen and (max-width: 1440px) and (min-width: 1300px) {
+  .der h1 {
+    font-size: 30px;
+  }
 
-    .der .p1-form {
-        font-size: 17px;
-    }
+  .der .p1-form {
+    font-size: 17px;
+  }
 
-    .der .p2-form {
-        font-size: 15px;
-        margin: 10px 0px 15px 0px;
-    }
+  .der .p2-form {
+    font-size: 15px;
+    margin: 10px 0px 15px 0px;
+  }
 
-    .form-input {
-        height: 40px;
-    }
+  .form-input {
+    height: 40px;
+  }
 
-    #aceptar {
-        font-size: 14px;
-        padding: 5px 30px;
-    }
+  #aceptar {
+    font-size: 14px;
+    padding: 5px 30px;
+  }
 
-    hr {
-        margin: 0px 0px 25px 0px;
-    }
+  hr {
+    margin: 0px 0px 25px 0px;
+  }
 
-    .mt {
-        margin-top: 4px;
-    }
+  .mt {
+    margin-top: 4px;
+  }
 }
 
-@media screen and (max-width:1300px) and (min-width:1100px) {
-    .izq {
-        background-position-x: center;
-    }
+@media screen and (max-width: 1300px) and (min-width: 1100px) {
+  .izq {
+    background-position-x: center;
+  }
 }
 
-@media screen and (max-width:1300px) and (min-width:1024px) {
-    .der h1 {
-        font-size: 27px;
-    }
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .der h1 {
+    font-size: 27px;
+  }
 
-    .der .p1-form {
-        font-size: 16px;
-    }
+  .der .p1-form {
+    font-size: 16px;
+  }
 
-    .der .p2-form {
-        font-size: 15px;
-        margin: 10px 0px 20px 0px;
-    }
+  .der .p2-form {
+    font-size: 15px;
+    margin: 10px 0px 20px 0px;
+  }
 
-    .form-input {
-        height: 40px;
-    }
+  .form-input {
+    height: 40px;
+  }
 
-    #aceptar {
-        font-size: 14px;
-        padding: 7px 30px;
-    }
+  #aceptar {
+    font-size: 14px;
+    padding: 7px 30px;
+  }
 
-    hr {
-        display: none;
-    }
-
+  hr {
+    display: none;
+  }
 }
 
-@media screen and (max-width:1100px) and (min-width:1024px) {
-    .izq {
-        width: 40vw;
-        background-position-y: center;
-        background-position-x: center;
-    }
+@media screen and (max-width: 1100px) and (min-width: 1024px) {
+  .izq {
+    width: 40vw;
+    background-position-y: center;
+    background-position-x: center;
+  }
 }
 
-@media screen and (max-width:1300px) and (min-width:801px) {
-    .izq {
-        width: 47vw;
-        background-position-x: center;
-    }
+@media screen and (max-width: 1300px) and (min-width: 801px) {
+  .izq {
+    width: 47vw;
+    background-position-x: center;
+  }
 
-    .der h1 {
-        font-size: 24px;
-    }
+  .der h1 {
+    font-size: 24px;
+  }
 
-    .der .p1-form {
-        font-size: 15px;
-    }
+  .der .p1-form {
+    font-size: 15px;
+  }
 
-    .der .p2-form {
-        font-size: 14px;
-    }
+  .der .p2-form {
+    font-size: 14px;
+  }
 
-    .form-input {
-        height: 33px;
-    }
+  .form-input {
+    height: 33px;
+  }
 
-    #aceptar {
-        font-size: 14px;
-        padding: 4px 30px;
-    }
+  #aceptar {
+    font-size: 14px;
+    padding: 4px 30px;
+  }
 
-    hr {
-        display: none;
-    }
-
-    .inputs-wrapper {
-        width: 50vw;
-    }
+  hr {
+    display: none;
+  }
 }
 
-@media screen and (max-width:801px) {
+@media screen and (max-width: 801px) {
+  .main {
+    flex-direction: column;
+  }
 
-    .main {
-        flex-direction: column;
-    }
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    height: 23vh;
+    width: 100vw;
+  }
 
-    .izq {
-        background-image: url(../img/Banner_Janoz_3_1.png);
-        height: 23vh;
-        width: 100vw;
-    }
+  .der {
+    display: block;
+    width: 100vw;
+    padding: 0 50px;
+  }
 
-    .der {
-        height: 100vh;
-        width: 100vw;
-        padding: 0 50px;
-    }
+  .hr-suc {
+    display: none;
+  }
 
-    .hr-suc {
-        display: none;
-    }
+  .der .p1-form {
+    font-size: 15px;
+  }
 
-    .der .p1-form {
-        font-size: 15px;
-    }
+  .der .p2-form {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+  }
 
-    .der .p2-form {
-        font-size: 14px;
-        margin: 10px 0 15px 0;
-    }
+  hr {
+    display: none;
+  }
 
-    hr {
-        display: none;
-    }
+  #aceptar {
+    font-size: 14px;
+    padding: 5px 30px;
+  }
 
-    #aceptar {
-        font-size: 14px;
-        padding: 5px 30px;
-    }
-
-    .footer .p-footer {
-        font-size: 13px;
-    }
-
+  .footer .p-footer {
+    font-size: 13px;
+  }
 }
 
-@media screen and (max-width:800px) and (min-width:500px) {
-    .der h1 {
-        font-size: 23px;
-    }
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .der h1 {
+    font-size: 23px;
+  }
 
-    .izq {
-        height: 35vh;
-    }
+  .izq {
+    height: 35vh;
+  }
 
-    .inputs-wrapper {
-        width: 80vw;
-    }
-
+  .inputs-wrapper {
+    width: 80vw;
+  }
 }
 
-@media screen and (max-width:500px) {
-    .der {
-        height: 680px;
-        display: block;
-        padding: 50px 50px;
-    }
+@media screen and (max-width: 500px) {
+  .der {
+    height: 100vh;
+    display: block;
+    padding: 30px 30px;
+  }
 
-    .der h1 {
-        /* font-size: 18px;
+  .der h1 {
+    /* font-size: 18px;
         margin: 20px 0 30px 0; */
-        display: none;
-    }
+    display: none;
+  }
 
-    .inputs-wrapper {
-        width: 70vw;
-    }
+  .inputs-wrapper {
+    width: 82vw;
+  }
 
-    
+  .first-p,
+  .last-p {
+    font-size: 15px;
+  }
 
-    .first-p, 
-    .last-p {
-        font-size: 15px;
-    }
+  .p-mobile {
+    display: none;
+  }
 
-    
-
-    .p-mobile {
-        display: none;
-    }
-
-    .form-label {
-        font-size: 15px;
-    }
+  .form-label {
+    font-size: 15px;
+  }
 }
