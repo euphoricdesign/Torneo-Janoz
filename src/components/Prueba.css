@@ -35,22 +35,22 @@
 .izq {
   background-image: url(../img/img.png);
   background-size: cover;
+  background-position-x: center;
   height: 100vh;
-  width: 30vw;
+  width: 24vw;
   background-position-y: top;
   background-repeat: no-repeat;
 }
 
 .der {
-  background-color: #15181f;
-  height: 100vh;
-  width: 70vw;
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 112px;
-  overflow-y: scroll;
+    background-color: #15181f;
+    height: 100vh;
+    width: 76vw;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 112px;
 }
 
 .der h1 {
@@ -58,6 +58,7 @@
   color: #f33d37;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
   font-family: Futura-bold;
 }
 
@@ -113,9 +114,6 @@
   margin-bottom: 10px;
 }
 
-hr {
-  width: 50vw;
-}
 
 @media screen and (max-width: 1440px) {
   .form-input {
@@ -126,6 +124,7 @@ hr {
 @media screen and (max-width: 1440px) and (min-width: 1300px) {
   .der h1 {
     font-size: 30px;
+    margin: 15px 0px 10px 0px;
   }
 
   .der .p1-form {
@@ -153,6 +152,7 @@ hr {
   .mt {
     margin-top: 4px;
   }
+
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1100px) {
@@ -187,6 +187,10 @@ hr {
   hr {
     display: none;
   }
+
+  .der h1 {
+    margin: 27px 0px 10px 0px;
+  }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 1024px) {
@@ -198,14 +202,10 @@ hr {
 }
 
 @media screen and (max-width: 1300px) and (min-width: 801px) {
-  .izq {
-    width: 47vw;
-    background-position-x: center;
-  }
 
-  .der h1 {
+  /* .der h1 {
     font-size: 24px;
-  }
+  } */
 
   .der .p1-form {
     font-size: 15px;
@@ -229,6 +229,44 @@ hr {
   }
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1100px) {
+  .izq {
+    width: 32vw;
+    background-position-x: center;
+}
+}
+
+@media screen and (max-width: 1100px) and (min-width: 960px) {
+  .izq {
+    width: 40vw;
+    background-position-x: center;
+  }
+
+  .der h1 {
+    font-size: 22px;
+    margin: 27px 0px 10px 0px;
+  }
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 801px) {
+  .der h1 {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .izq {
+    width: 55vw;
+    background-position-x: center;
+}
+}
+
+@media screen and (max-width: 960px) {
+  .form-label {
+    font-size: 15px;
+  }
+} 
+
 @media screen and (max-width: 801px) {
   .main {
     flex-direction: column;
@@ -251,7 +289,7 @@ hr {
   }
 
   .der .p1-form {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .der .p2-form {
@@ -275,24 +313,32 @@ hr {
 
 @media screen and (max-width: 800px) and (min-width: 500px) {
   .der h1 {
-    font-size: 23px;
+    font-size: 19px;
   }
 
   .izq {
-    height: 35vh;
+    height: 37vh;
   }
 
-  .inputs-wrapper {
+  /* .inputs-wrapper {
     width: 80vw;
-  }
+  } */
+
+  .form-input {
+    height: 39px;
+}
+
+.der h1 {
+  margin: 20px 0px 0px 0px;
+}
 }
 
 @media screen and (max-width: 500px) {
   .der {
-    height: 100vh;
+    height: 630px;
     display: block;
     padding: 30px 30px;
-  }
+}
 
   .der h1 {
     /* font-size: 18px;
@@ -300,9 +346,9 @@ hr {
     display: none;
   }
 
-  .inputs-wrapper {
+  /* .inputs-wrapper {
     width: 82vw;
-  }
+  } */
 
   .first-p,
   .last-p {
@@ -316,4 +362,29 @@ hr {
   .form-label {
     font-size: 15px;
   }
+
+  #aceptar {
+    margin: 15px 0px 0px 0px;
 }
+
+.form-input {
+  height: 39px;
+}
+}
+
+
+
+
+
+@media screen and (orientation:landscape)
+and (min-device-width: 578px) 
+and (max-device-width: 700px) {
+  .izq {
+    height: 58vh;
+  }
+
+  .der {
+    height: 530px;
+  }
+}
+
