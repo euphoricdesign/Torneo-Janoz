@@ -274,7 +274,7 @@
 
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 23vh;
+    height: 21vh;
     width: 100vw;
   }
 
@@ -372,19 +372,16 @@
 }
 }
 
+/*Landscape*/
 
+@media 
+  (max-device-width: 1280px) 
+  and (orientation: landscape) { 
+    .izq {
+      height: 60vh;
+    }
 
-
-
-@media screen and (orientation:landscape)
-and (min-device-width: 578px) 
-and (max-device-width: 700px) {
-  .izq {
-    height: 58vh;
-  }
-
-  .der {
-    height: 530px;
-  }
+    .der {
+      height: 530px;
+    }
 }
-
