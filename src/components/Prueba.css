@@ -333,7 +333,9 @@
 }
 }
 
-@media screen and (max-width: 500px) {
+@media 
+  (max-device-width: 500px) 
+  and (orientation: portrait) {
   .der {
     height: 630px;
     display: block;
@@ -375,7 +377,7 @@
 /*Landscape*/
 
 @media 
-  (max-device-width: 1280px) 
+(min-device-width: 320px) and (max-device-width: 425px) 
   and (orientation: landscape) { 
     .izq {
       height: 60vh;
@@ -385,3 +387,16 @@
       height: 530px;
     }
 }
+
+
+/* @media 
+  (max-device-width: 1280px) 
+  and (orientation: portrait) { 
+    .izq {
+      height: 60vh;
+    }
+
+    .der {
+      height: 530px;
+    }
+} */
