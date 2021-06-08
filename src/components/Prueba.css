@@ -414,7 +414,7 @@
 @media screen and (max-width: 500px) and (min-width: 410px){
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 19vh;
+    height: 20vh;
     width: 100vw;
   }
 }
@@ -430,15 +430,18 @@
 
 
 /*Landscape*/
-
-@media (max-width: 576px) and (orientation: landscape) {
-  .izq {
-    height: 60vh;
-  }
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 700px) {
   .der {
-    height: 600px;
+    height: 630px;
   }
+
+}
+
+@media only screen and (min-device-width : 620px) and (max-device-width : 700px) {
+  .izq {
+    height: 48vh;
+  }
+
 }
 
 
