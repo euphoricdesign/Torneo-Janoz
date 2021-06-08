@@ -386,7 +386,7 @@
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
     background-position-x: center;
-    height: 45vh;
+    height: 32vh;
     width: 100vw;
   }
 }
@@ -396,7 +396,7 @@
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
     background-position-x: center;
-    height: 36vh;
+    height: 29vh;
     width: 100vw;
   }
 }
@@ -405,16 +405,16 @@
 @media screen and (max-width: 600px) and (min-width: 500px){
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 30vh;
+    height: 24vh;
     width: 100vw;
   }
 }
 
 
-@media screen and (max-width: 499px) and (min-width: 410px){
+@media screen and (max-width: 500px) and (min-width: 410px){
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 24vh;
+    height: 19vh;
     width: 100vw;
   }
 }
@@ -423,7 +423,7 @@
 @media screen and (max-width: 410px) and (min-width: 320px){
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 21vh;
+    height: 18vh;
     width: 100vw;
   }
 }
