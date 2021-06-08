@@ -58,7 +58,7 @@
   color: #f33d37;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 45px;
   font-family: Futura-bold;
 }
 
@@ -124,7 +124,7 @@
 @media screen and (max-width: 1440px) and (min-width: 1300px) {
   .der h1 {
     font-size: 30px;
-    margin: 15px 0px 10px 0px;
+    margin: 35px 0px 10px 0px;
   }
 
   .der .p1-form {
@@ -137,7 +137,15 @@
   }
 
   .form-input {
-    height: 40px;
+    height: 36px;
+  }
+
+  .der .p1-form {
+    font-size: 15px;
+  }
+
+  .der .p2-form {
+    font-size: 13px;
   }
 
   #aceptar {
@@ -172,7 +180,7 @@
 
   .der .p2-form {
     font-size: 15px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 14px 0px;
   }
 
   .form-input {
@@ -208,12 +216,14 @@
   } */
 
   .der .p1-form {
-    font-size: 15px;
+    font-size: 14px;
+    margin: 0 0 5px 0;
   }
 
   .der .p2-form {
-    font-size: 14px;
-  }
+    font-size: 13px;
+    margin: 5px 0 11px 0;
+}
 
   .form-input {
     height: 33px;
@@ -222,6 +232,7 @@
   #aceptar {
     font-size: 14px;
     padding: 4px 30px;
+    margin-top: 0;
   }
 
   hr {
@@ -244,7 +255,7 @@
 
   .der h1 {
     font-size: 22px;
-    margin: 27px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
   }
 }
 
@@ -272,11 +283,7 @@
     flex-direction: column;
   }
 
-  .izq {
-    background-image: url(../img/Banner_Janoz_3_1.png);
-    height: 21vh;
-    width: 100vw;
-  }
+  
 
   .der {
     display: block;
@@ -316,9 +323,6 @@
     font-size: 19px;
   }
 
-  .izq {
-    height: 37vh;
-  }
 
   /* .inputs-wrapper {
     width: 80vw;
@@ -333,9 +337,13 @@
 }
 }
 
-@media 
-  (max-device-width: 500px) 
-  and (orientation: portrait) {
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .der {
+    height: 630px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .der {
     height: 630px;
     display: block;
@@ -374,29 +382,64 @@
 }
 }
 
-/*Landscape*/
-
-@media 
-(min-device-width: 320px) and (max-device-width: 425px) 
-  and (orientation: landscape) { 
-    .izq {
-      height: 60vh;
-    }
-
-    .der {
-      height: 530px;
-    }
+@media screen and (max-width: 800px) and (min-width: 700px){
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    background-position-x: center;
+    height: 45vh;
+    width: 100vw;
+  }
 }
 
 
-/* @media 
-  (max-device-width: 1280px) 
-  and (orientation: portrait) { 
-    .izq {
-      height: 60vh;
-    }
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    background-position-x: center;
+    height: 36vh;
+    width: 100vw;
+  }
+}
 
-    .der {
-      height: 530px;
-    }
-} */
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    height: 30vh;
+    width: 100vw;
+  }
+}
+
+
+@media screen and (max-width: 499px) and (min-width: 410px){
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    height: 24vh;
+    width: 100vw;
+  }
+}
+
+
+@media screen and (max-width: 410px) and (min-width: 320px){
+  .izq {
+    background-image: url(../img/Banner_Janoz_3_1.png);
+    height: 21vh;
+    width: 100vw;
+  }
+}
+
+
+/*Landscape*/
+
+@media (max-width: 576px) and (orientation: landscape) {
+  .izq {
+    height: 60vh;
+  }
+
+  .der {
+    height: 530px;
+  }
+}
+
+
+
