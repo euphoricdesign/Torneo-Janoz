@@ -386,7 +386,7 @@
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
     background-position-x: center;
-    height: 32vh;
+    height: 57vh;
     width: 100vw;
   }
 }
@@ -396,7 +396,7 @@
   .izq {
     background-image: url(../img/Banner_Janoz_3_1.png);
     background-position-x: center;
-    height: 29vh;
+    height: 57vh;
     width: 100vw;
   }
 }
@@ -430,19 +430,16 @@
 
 
 /*Landscape*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 700px) {
+@media only screen and (max-device-width : 870px) and (orientation: landscape) {
+  
+
   .der {
-    height: 630px;
+    height: 623px;
   }
 
 }
 
-@media only screen and (min-device-width : 620px) and (max-device-width : 700px) {
-  .izq {
-    height: 48vh;
-  }
 
-}
 
 
 
