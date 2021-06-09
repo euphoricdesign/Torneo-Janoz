@@ -333,7 +333,7 @@
 }
 
 .der h1 {
-  margin: 20px 0px 0px 0px;
+  margin: 45px 0px 0px 0px;
 }
 }
 
@@ -431,8 +431,6 @@
 
 /*Landscape*/
 @media only screen and (max-device-width : 870px) and (orientation: landscape) {
-  
-
   .der {
     height: 623px;
   }
