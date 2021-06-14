@@ -1,21 +1,21 @@
 @font-face {
   font-family: Futura;
-  src: url(FuturaPTLight.otf);
+  src: url(./font/FuturaPTLight.otf);
 }
 
 @font-face {
   font-family: Futura-bold;
-  src: url(FuturaPTBold.otf);
+  src: url(./font/FuturaPTBold.otf);
 }
 
 @font-face {
   font-family: Futura-medium;
-  src: url(FuturaPTMedium.otf);
+  src: url(./font/FuturaPTMedium.otf);
 }
 
 @font-face {
   font-family: Futura-demi;
-  src: url(FuturaPTDemi.otf);
+  src: url(./font/FuturaPTDemi.otf);
 }
 
 .main {
