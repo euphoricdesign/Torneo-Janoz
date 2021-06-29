@@ -109,7 +109,7 @@ p {
 .form-label {
     color: #fff;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     letter-spacing: 1px;
     margin: 0;
@@ -270,5 +270,15 @@ p {
 
     .hr {
         display: none;
+    }
+
+    .last-p {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .codigo {
+        font-size: 22px;
     }
 }

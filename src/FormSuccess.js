@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from './img/logo.png'
+import video1 from './img/video1.jpg'
+import video2 from './img/video2.jpg'
 
 const FormSuccess = ({ uniqueCodeToShow }) => {
     return (
@@ -46,6 +48,11 @@ const FormSuccess = ({ uniqueCodeToShow }) => {
                         </button>
                     </div>
                     <p className="last-p">El torneo es exclusivo para la consola PS4</p>
+                    <h2 className="text-video">APRENDE Y JUEGA CON EL # 1</h2>
+                    <div className="video-container">
+                        <a href="https://www.youtube.com/watch?v=BEgR4G5olBo" target="_blank" rel="noreferrer"><img className="img-thumb img1" src={video1} alt="video-1" /></a>
+                        <a href="https://www.youtube.com/watch?v=qX9VLOjOIn4" target="_blank" rel="noreferrer"><img className="img-thumb" src={video2} alt="video-1" /></a>
+                    </div>
                 </div>
             </div>
             <div className="footer">

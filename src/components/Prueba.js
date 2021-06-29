@@ -5,6 +5,7 @@ import firebaseApp from '../firebase'
 import './Prueba.css';
 import logo from '../img/logo.png'
 
+
 const Prueba = ({ submitForm, updateCode }) => {
     const {
         handleChange,
