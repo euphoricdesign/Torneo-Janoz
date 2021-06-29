@@ -271,4 +271,14 @@ p {
     .hr {
         display: none;
     }
+
+    .last-p {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .codigo {
+        font-size: 22px;
+    }
 }

@@ -94,6 +94,27 @@
   margin-top: 10px;
 }
 
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-video {
+  font-size: 17px;
+  color: #f33d37;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  font-family: Futura-bold;
+}
+
+.img-thumb {
+  width: 200px;
+}
+
+
 .footer {
   background-color: #1f232b;
   width: 100%;
@@ -362,7 +383,7 @@
 
   .first-p,
   .last-p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .p-mobile {
@@ -425,6 +446,11 @@
     background-image: url(../img/Banner_Janoz_3_1.png);
     height: 18vh;
     width: 100vw;
+  }
+
+  .img-thumb {
+    width: 170px;
+    margin: 0 10px;
   }
 }
 
