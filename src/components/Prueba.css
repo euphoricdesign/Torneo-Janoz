@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 112px;
+    padding: 10px 50px;
 }
 
 .der h1 {
@@ -237,7 +237,7 @@
   } */
 
   .der .p1-form {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 0 5px 0;
   }
 
@@ -247,7 +247,7 @@
 }
 
   .form-input {
-    height: 33px;
+    height: 30px;
   }
 
   #aceptar {
@@ -275,7 +275,7 @@
   }
 
   .der h1 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px 0px 10px 0px;
   }
 }
