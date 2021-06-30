@@ -11,13 +11,13 @@ const FormSuccess = ({ uniqueCodeToShow }) => {
                 </div>
                 <div className="der">
                     <h1 className="font-weight-bold">ESTAS CADA VEZ MÁS CERCA DE ENFRENTARTE A LOS MEJORES</h1>
-                    <hr className="hr-suc" style={{marginBottom: 50}} />
-                    <p className="first-p">El torneo iniciará el día 15 de Junio a las 15hs. Para continuar con tu registro debes ingresar a la página del torneo y colocar tu código único.</p>
+                    <hr className="hr-suc" style={{marginBottom: 20, marginTop: 10}} />
+                    <p className="first-p-success">El torneo iniciará el día 15 de Junio a las 15hs. Para continuar con tu registro debes ingresar a la página del torneo y colocar tu código único.</p>
                     <p className="codigo">{uniqueCodeToShow}</p>
                     <div className="centrar">
                         <button
                             className="btn btn-danger"
-                            id="aceptar"
+                            id="aceptar-success"
                             type="submit"
                         >
                             <a
@@ -30,10 +30,10 @@ const FormSuccess = ({ uniqueCodeToShow }) => {
                             </a>
                         </button>
                     </div>
-                    <p className="last-p">Ingresa a nuestro sevidor oficial de Discord para poder resolver todas tus dudas.</p>
+                    <p className="last-p-success">Ingresa a nuestro sevidor oficial de Discord para poder resolver todas tus dudas.</p>
                     <div className="centrar">
                         <button
-                            className="btn btn-danger"
+                            className="btn btn-danger btn-success"
                             id="aceptar"
                             type="submit"
                         >
@@ -47,7 +47,7 @@ const FormSuccess = ({ uniqueCodeToShow }) => {
                             </a>
                         </button>
                     </div>
-                    <p className="last-p">El torneo es exclusivo para la consola PS4</p>
+                    <p className="last-p-success">El torneo es exclusivo para la consola PS4</p>
                     <h2 className="text-video">APRENDE Y JUEGA CON EL # 1</h2>
                     <div className="video-container">
                         <a href="https://www.youtube.com/watch?v=BEgR4G5olBo" target="_blank" rel="noreferrer"><img className="img-thumb img1" src={video1} alt="video-1" /></a>
