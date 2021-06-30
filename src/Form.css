@@ -171,6 +171,12 @@ p {
     font-size: 17px;
 }
 
+.first-p-success {
+    margin-top: 15px;
+    font-family: Futura-demi;
+    font-size: 17px;
+}
+
 .last-p {
     font-family: Futura-demi;
     font-size: 17px;
@@ -178,10 +184,17 @@ p {
     margin-bottom: 40px;
 }
 
+.last-p-success {
+    font-family: Futura-demi;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .codigo {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .button-wrapper {
@@ -194,6 +207,10 @@ p {
     font-weight: bold;
     font-size: 16px;
     border-radius: 20px;
+}
+
+.btn-success {
+    margin-top: 10px;
 }
 
 .main-footer {
@@ -273,6 +290,12 @@ p {
     }
 
     .last-p {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .last-p-success {
         font-size: 13px;
         margin-top: 12px;
         margin-bottom: 20px;
