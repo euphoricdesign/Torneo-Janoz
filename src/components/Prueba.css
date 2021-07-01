@@ -36,7 +36,7 @@
   background-image: url(../img/img.png);
   background-size: cover;
   width: 25vw;
-  background-position-y: top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
