@@ -32,7 +32,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                     <h1 className="font-weight-bold">TORNEO JANOZ 1X1 FIFA 21</h1>
                     <hr style={{marginTop:0}}  />
                     <p className="p1-form" style={{margin: 0}}>Participa junto a Alkosto en una competencia donde deberás superar a todos tus rivales para enfrentarte a Janoz, el mejor Jugador de Colombia</p>
-                    <p className="p2-form">Solo debes registrarte utilizando el número de 10 digitos que se encuentra en la factura de tu compra en Alkosto, seguir las instrucciones a continuación y esperar al 15 de junio para vencer a todos tus oponentes!</p>
+                    <p className="p2-form">Solo debes registrarte utilizando el número de 10 digitos que se encuentra en la factura de tu compra en Alkosto, seguir las instrucciones a continuación y esperar al 25 de julio para vencer a todos tus oponentes!</p>
 
                     <form onSubmit={handleSubmit}>
                         <div className="inputs-wrapper">
