@@ -121,10 +121,10 @@ p {
     padding-left: 10px;
     outline: none;
     border-radius: 2px;
-    height: 45px;
+    height: 37px;
     width: 100%;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     color: white;
 }
 
@@ -172,7 +172,7 @@ p {
 }
 
 .first-p-success {
-    margin-top: 15px;
+    margin-top: 40px;
     font-family: Futura-demi;
     font-size: 17px;
 }
@@ -194,7 +194,7 @@ p {
 .codigo {
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .button-wrapper {

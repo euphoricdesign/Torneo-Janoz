@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import useForm from '../useForm'
 import validate from '../validateInfo'
+import logo from '../img/logo.png'
 import firebaseApp from '../firebase'
 import './Prueba.css';
-import logo from '../img/logo.png'
 
 
 const Prueba = ({ submitForm, updateCode }) => {

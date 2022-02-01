@@ -1,8 +1,8 @@
 import React, {useState, useCallback} from 'react';
+import Prueba from '../src/components/Prueba';
+import FormSuccess from './FormSuccess';
 import './App.css';
 import './Form.css'; 
-import Prueba from '../src/components/Prueba'
-import FormSuccess from './FormSuccess'
 
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false)
