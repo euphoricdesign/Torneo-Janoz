@@ -49,7 +49,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                                 value={values.name}
                                 onChange={handleChange}
                             />
-                            {errors.name && <p>{errors.name}</p>}
+                            {errors.name && <p className='error'>{errors.name}</p>}
 
                             <label htmlFor="name" className="form-label">
                                 Cedula de identidad
@@ -105,7 +105,7 @@ const Prueba = ({ submitForm, updateCode }) => {
                             href="https://docs.google.com/document/d/1eOrZyIDrN27SV_q7i2F_Gi01_287MWYj8HEbt8zoY38/edit?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
-                            style={{color:'white', fontSize: 10}}
+                            className='info-torneo'
                         >
                             Información del torneo
                         </a>

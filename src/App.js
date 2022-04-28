@@ -14,7 +14,7 @@ function App() {
 
   const updateCode = useCallback(
     (code) => {
-      setUniqueCodeToShow(code)
+      setUniqueCodeToShow(code) // Código único para mostrar, le llega del hook useForm 
     },
     [],
   )

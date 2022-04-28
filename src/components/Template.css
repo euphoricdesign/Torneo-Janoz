@@ -20,6 +20,12 @@
     height: 80px;
 }
 
+@media screen and (min-width: 2300px){
+    .footer {
+        height: 270px;
+    }
+}
+
 @media screen and (max-width:800px) {
 
     .main {

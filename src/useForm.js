@@ -15,11 +15,12 @@ const useForm = (submitForm, validate, updateCode) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     useEffect(() => {
-        const uniqueCodesRef = firebaseApp.database().ref().child("unique-codes")
-        uniqueCodesRef.once("value", snap => {
-            const documentKey = Object.keys(snap.val())[0]
-            const documentValue = snap.val()[documentKey]
-            setKeyToDelete(documentKey)
+        const uniqueCodesRef = firebaseApp.database().ref().child("unique-codes") // Referencia a una colección en firebase Códigos únicos (conjunto de datos)
+        uniqueCodesRef.once("value", snap => { // once = una sola vez
+            const documentKey = Object.keys(snap.val())[0] // primer clave que se encuentre en la bd  (snap.val = contenido de la instantanea)
+            const documentValue = snap.val()[documentKey] // primer código que se encuentre en la bd
+
+            setKeyToDelete(documentKey) // le pasamos la key para eliminar, ya esta reservada.
             setValues({
                 name: '',
                 id: '', 
@@ -27,13 +28,13 @@ const useForm = (submitForm, validate, updateCode) => {
                 ticket: '',
                 uniqueCode: documentValue,
                 key: documentKey
-            })
-            updateCode(documentValue)
+            }) // Cada vez que un usuario ingrese a la página va a tener "reservado" una clave y un código.
+            updateCode(documentValue) // código único para mostrar
         })
-    }, [updateCode])
+    }, [updateCode]) // el effect se vuelve a ejecutar cada vez que se actualiza la función updateCode
 
     const handleChange = e => {
-        const { name, value } = e.target;
+        const { name, value } = e.target; // de cada input los atributos name y value 
         setValues({
             ...values,
             [name]: value
@@ -43,20 +44,23 @@ const useForm = (submitForm, validate, updateCode) => {
     const handleSubmit = e => {
         e.preventDefault();
 
+
         setErrors(validate(values));
         setIsSubmitting(true);
     };
 
     const registerUser = useCallback(
-        (ref) => ref.push(values).key, [values]
-    )
+        (ref) => ref.push(values).key, // el método push es de firebase, guarda un nuevo valor. 
+        [values]
+    ); // usando .key (property not method) de esta referencia obtenemos un ID único.
+
 
     useEffect(() => {
-        const registeredUsers = firebaseApp.database().ref().child("registered-users")
+        const registeredUsersRef = firebaseApp.database().ref().child("registered-users") // Referencia colección usuarios registrados 
         
         if (Object.keys(errors).length === 0 && isSubmitting) {
             submitForm();
-            registerUser(registeredUsers)
+            registerUser(registeredUsersRef)
         }
     }, [errors, submitForm, isSubmitting, registerUser]);
 
@@ -64,3 +68,5 @@ const useForm = (submitForm, validate, updateCode) => {
 };
 
 export default useForm;
+
+
