@@ -7,7 +7,7 @@
 }
 
 .inputs-wrapper p {
-  font-size: 12px;
+  font-size: 11px;
   margin: 0;
   color: #f00e0e;
 }
@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   .inputs-wrapper p {
     font-size: 16px;
   }
@@ -47,7 +47,7 @@
 
 .der {
     background-color: #15181f;
-    height: 100vh;
+    /* height: 100vh; */
     width: 76vw;
     display: block;
     flex-direction: column;
@@ -59,12 +59,12 @@
 
 
 .der h1 {
-  font-size: 35px;
+  font-size: 30px;
   color: #f33d37;
   font-weight: bold;
   text-align: center;
-  margin-top: 45px;
-  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width: 1920px) {
@@ -82,8 +82,8 @@
 }
 
 .der .p1-form {
-  font-size: 19px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width: 2300px){
@@ -99,8 +99,8 @@
 
 
 .der .p2-form {
-  font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
   margin: 10px 0;
 }
 
@@ -119,16 +119,16 @@
 } 
 
 .form-label {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .form-input::placeholder {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #aceptar {
   border-radius: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -142,7 +142,7 @@
 
 #aceptar-success {
   border-radius: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -166,7 +166,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   #aceptar-success {
     font-size: 20px;
   }
@@ -195,7 +195,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   .info-torneo {
     font-size: 15px;
   }
@@ -227,7 +227,7 @@
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width: 2300px) {
@@ -244,7 +244,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   .text-video {
     font-size: 23px;
     margin-top: 25px;
@@ -313,7 +313,7 @@
 }
 
 .footer .p-footer {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -327,7 +327,7 @@
 }
 
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   .footer{
     height: 170px;
   }
@@ -358,7 +358,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1899px) {
   .der h1 {
     font-size: 50px;
     margin: 45px 0px 10px 0px;
@@ -407,7 +407,7 @@
 
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
   .inputs-wrapper {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1300px) {
@@ -627,15 +627,14 @@
 
 @media screen and (max-width: 500px) {
   .der {
-    height: 100vh;
+    /* height: 100vh; */
     display: block;
     padding: 40px 30px;
 }
 
   .der h1 {
-    /* font-size: 18px;
-        margin: 20px 0 30px 0; */
-    display: none;
+    font-size: 24px;
+    margin: 0;
   }
 
   /* .inputs-wrapper {
@@ -649,7 +648,7 @@
 
   .first-p-success,
   .last-p-success {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .p-mobile {

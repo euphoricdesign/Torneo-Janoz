@@ -7,6 +7,8 @@ import './Prueba.css';
 
 
 const Prueba = ({ submitForm, updateCode }) => {
+    const width = window.innerWidth > 480 ? {height: '100vh'} : {}
+
     const {
         handleChange,
         values,
@@ -28,7 +30,7 @@ const Prueba = ({ submitForm, updateCode }) => {
             <div className="main">
                 <div className="izq">
                 </div>
-                <div className="der">
+                <div className="der" style={width}>
                     <h1 className="font-weight-bold">TORNEO JANOZ 1X1 FIFA 21</h1>
                     <hr style={{marginTop:0}}  />
                     <p className="p1-form" style={{margin: 0}}>Participa junto a Alkosto en una competencia donde deberás superar a todos tus rivales para enfrentarte a Janoz, el mejor Jugador de Colombia</p>

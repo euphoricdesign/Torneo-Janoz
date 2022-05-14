@@ -109,7 +109,7 @@ p {
 .form-label {
     color: #fff;
     display: inline-block;
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
     letter-spacing: 1px;
     margin: 0;
@@ -127,7 +127,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
     .form-label {
         font-size: 20px;
     }
@@ -143,7 +143,7 @@ p {
     height: 37px;
     width: 100%;
     border: none;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     color: white;
 }
 
@@ -161,18 +161,18 @@ p {
 
 @media screen and (min-width: 1300px) and (max-width:1440px) { 
     .form-input {
-        height: 42px;
+        height: 40px;
     }
 }
 
 .form-input::placeholder {
     color: #595959;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 1300px) and (max-width:1440px) { 
     .form-input::placeholder {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -222,14 +222,14 @@ p {
 
 .first-p {
     margin-top: 15px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
 
 .first-p-success {
-    margin-top: 40px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 @media screen and (min-width: 2300px) {
@@ -246,7 +246,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1900px){
+@media screen and (min-width: 1440px) and (max-width: 1900px){
     .first-p-success {
         font-size: 23px;
         margin-top: 20px;
@@ -254,17 +254,17 @@ p {
 }
 
 .last-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
 .last-p-success {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 2300px) {
@@ -283,13 +283,13 @@ p {
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1900px) {
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
     .last-p-success {
         font-size: 23px;
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1899px) {
     .last-p-success {
         font-size: 23px;
         margin: 25px 0;
@@ -297,9 +297,9 @@ p {
 }
 
 .codigo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 @media screen and (min-width: 2300px) {
@@ -316,7 +316,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
     .codigo {
         font-size: 30px;
         margin: 25px 0;
@@ -338,11 +338,11 @@ p {
 #aceptar {
     padding: 7px 40px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 20px;
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
     #aceptar {
         font-size: 20px;
     }
