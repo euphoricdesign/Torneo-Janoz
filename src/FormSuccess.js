@@ -4,14 +4,13 @@ import logo from './img/logo.png'
 // import video2 from './img/video2.jpg'
 
 const FormSuccess = ({ uniqueCodeToShow }) => {
-    const width = window.innerWidth > 480 ? {height: '100vh'} : {}
 
     return (
         <div>
             <div className="main">
                 <div className="izq">
                 </div>
-                <div className="der" style={width}>
+                <div className="der">
                     <h1 className="font-weight-bold">ESTÁS CADA VEZ MÁS CERCA DE ENFRENTARTE A LOS MEJORES</h1>
                     <hr className="hr-suc" style={{marginBottom: 20, marginTop: 10}} />
                     <p className="first-p-success">El torneo iniciará el día 15 de Agosto a las 15hs. Para continuar con tu registro debes ingresar a la página del torneo y colocar tu código único.</p>

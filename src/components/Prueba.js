@@ -7,7 +7,6 @@ import './Prueba.css';
 
 
 const Prueba = ({ submitForm, updateCode }) => {
-    const width = window.innerWidth > 480 ? {height: '100vh'} : {}
 
     const {
         handleChange,
