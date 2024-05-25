@@ -74,22 +74,17 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 4. Haz push a la rama (`git push origin feature/nueva-funcion`).
 5. Abre un Pull Request.
 
-## Licencia
+## Información Adicional
 
-Este proyecto no cuenta con licencias por el momento.
+### Licencia
 
-## Contacto
+Este proyecto no tiene una licencia específica por el momento.
 
-Para dudas o soporte, puedes contactar a:
+### Autores
 
-- **Nombre del contacto:** [Tu Nombre]
-- **Correo electrónico:** [tu.correo@example.com]
+- **Merlina Villecco**
 
-## Autores y Reconocimientos
+### Contacto
 
-- **Autor:** [Tu Nombre]
-- **Patrocinador:** RedBull Colombia
-
+- **LinkedIn:** [Merlina Villecco](https://www.linkedin.com/in/merlina-villecco-64149a214/)
 ---
-
-Este README debería proporcionar una descripción clara y concisa de tu proyecto, facilitando la comprensión y uso del mismo tanto a usuarios como a posibles contribuidores. Si necesitas hacer alguna modificación o agregar información adicional, no dudes en decírmelo.
