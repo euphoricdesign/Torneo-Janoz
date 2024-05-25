@@ -1,8 +1,5 @@
 
 ---
-title: "Torneo Janoz"
-description: "Formulario de registro para un torneo eSport"
----
 
 # Torneo Janoz
 
