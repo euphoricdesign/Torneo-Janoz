@@ -64,16 +64,6 @@ Página sencilla de registro a un torneo eSport patrocinado por RedBull Colombia
 
 La página de registro está disponible en la página principal de la aplicación. Los usuarios solo necesitan completar el formulario con su información y enviar el registro. La interfaz es intuitiva y fácil de usar.
 
-## Contribución
-
-Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una rama para tu función o corrección de errores (`git checkout -b feature/nueva-funcion`).
-3. Haz commit de tus cambios (`git commit -am 'Añadir nueva función'`).
-4. Haz push a la rama (`git push origin feature/nueva-funcion`).
-5. Abre un Pull Request.
-
 ## Información Adicional
 
 ### Licencia
