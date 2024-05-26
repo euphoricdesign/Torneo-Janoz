@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 1440px) and (max-width: 1899px){
   .inputs-wrapper p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -49,10 +49,10 @@
     background-color: #15181f;
   
     width: 76vw;
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 10px 50px;
 }
 
@@ -168,7 +168,7 @@
 
 @media screen and (min-width: 1440px) and (max-width: 1899px){
   #aceptar-success {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -371,21 +371,22 @@
 
 @media screen and (min-width: 1440px) and (max-width: 1899px) {
   .der h1 {
-    font-size: 50px;
-    margin: 45px 0px 10px 0px;
+    font-size: 38px;
+    /* margin: 45px 0px 10px 0px; */
   }
 
   .der .p1-form {
-    font-size: 23px;
+    font-size: 16px;
   }
 
   .der .p2-form {
-    font-size: 23px;
+    font-size: 16px;
     margin: 10px 0px 15px 0px;
   }
 
   .form-input {
-    height: 36px;
+    margin-top: 10px;
+    
   }
 
   #aceptar {

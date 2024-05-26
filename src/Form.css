@@ -1,3 +1,5 @@
+
+
 p {
     text-align: center;
     font-size: 16px;
@@ -129,7 +131,7 @@ p {
 
 @media screen and (min-width: 1440px) and (max-width: 1899px){
     .form-label {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -140,10 +142,10 @@ p {
     padding-left: 10px;
     outline: none;
     border-radius: 2px;
-    height: 37px;
+    height: 40px;
     width: 100%;
     border: none;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     color: white;
 }
 
@@ -246,12 +248,12 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1900px){
+/* @media screen and (min-width: 1440px) and (max-width: 1900px){
     .first-p-success {
-        font-size: 23px;
+        font-size: 16px;
         margin-top: 20px;
     }
-}
+} */
 
 .last-p {
     font-family: 'Poppins', sans-serif;
@@ -283,15 +285,11 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1900px) {
-    .last-p-success {
-        font-size: 23px;
-    }
-}
+
 
 @media screen and (min-width: 1440px) and (max-width: 1899px) {
     .last-p-success {
-        font-size: 23px;
+        font-size:16px;
         margin: 25px 0;
     }
 }
@@ -342,9 +340,13 @@ p {
     border-radius: 20px;
 }
 
+#aceptar:focus {
+    outline: none;
+}
+
 @media screen and (min-width: 1440px) and (max-width: 1899px){
     #aceptar {
-        font-size: 20px;
+        margin-top: 10px;
     }
 }
 
